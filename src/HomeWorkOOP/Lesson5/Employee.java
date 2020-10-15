@@ -1,4 +1,4 @@
-package HomeWorkOOP;
+package HomeWorkOOP.Lesson5;
 
 public class Employee {
     private String name;
