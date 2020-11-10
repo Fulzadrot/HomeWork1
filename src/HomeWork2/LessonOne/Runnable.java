@@ -1,4 +1,4 @@
-package HomeWork2.Lesson1;
+package HomeWork2.LessonOne;
 
 public interface Runnable {
     public void run(int length);

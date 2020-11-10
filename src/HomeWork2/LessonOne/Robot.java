@@ -1,4 +1,4 @@
-package HomeWork2.Lesson1;
+package HomeWork2.LessonOne;
 
 public class Robot implements Runnable,Jumpable{
     private String name;
