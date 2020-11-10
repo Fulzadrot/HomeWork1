@@ -1,4 +1,4 @@
-package HomeWork2.Lesson1.Lesson2;
+package HomeWork2.Lesson1.LessonTwo;
 
 public class MyArraySizeException extends Exception{
     public MyArraySizeException(){
