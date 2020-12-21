@@ -5,6 +5,7 @@ import java.io.DataOutputStream;
 import java.io.IOException;
 import java.net.ServerSocket;
 import java.net.Socket;
+import java.util.Scanner;
 
 public class Server {
     public static int PORT = 1640;
@@ -19,6 +20,7 @@ public class Server {
             System.out.println("Сервер запущен");
             socket = server.accept();
             System.out.println("Клиент подключился");
+            Scanner scanner = new Scanner(System.in);
             DataInputStream in = new DataInputStream(socket.getInputStream());
             DataOutputStream out = new DataOutputStream(socket.getOutputStream());
             DataInputStream console = new DataInputStream(System.in);
@@ -35,7 +37,7 @@ public class Server {
                         }
                         System.out.println("Сервер отправил сообщение:");
                         try {
-                            out.writeUTF(msg);
+                            out.writeUTF(scanner.nextLine());
                         } catch (IOException e) {
                             e.printStackTrace();
                         }
