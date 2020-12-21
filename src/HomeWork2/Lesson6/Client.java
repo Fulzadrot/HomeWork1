@@ -5,6 +5,7 @@ import java.io.DataInputStream;
 import java.io.DataOutputStream;
 import java.io.IOException;
 import java.net.Socket;
+import java.util.Scanner;
 
 public class Client {
     public static void main(String[] args) {
@@ -15,6 +16,7 @@ public class Client {
             DataInputStream in = new DataInputStream(socket.getInputStream());
             DataOutputStream out = new DataOutputStream(socket.getOutputStream());
             DataInputStream console = new DataInputStream(System.in);
+            Scanner scanner = new Scanner(System.in);
             new Thread(new Runnable() {
                 @Override
                 public void run() {
